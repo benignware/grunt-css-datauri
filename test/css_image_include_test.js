@@ -32,16 +32,17 @@ exports.css_image_include = {
 
     var actual = grunt.file.read('tmp/default_options');
     var expected = grunt.file.read('test/expected/default_options');
-    test.equal(actual, expected, 'should describe what the default behavior is.');
+    
+    test.equal(actual, expected, 'all file-uris have been converted to data-uris');
 
     test.done();
   },
-  custom_options: function(test) {
+  exclude_files: function(test) {
     test.expect(1);
 
-    var actual = grunt.file.read('tmp/custom_options');
-    var expected = grunt.file.read('test/expected/custom_options');
-    test.equal(actual, expected, 'should describe what the custom option(s) behavior is.');
+    var actual = grunt.file.read('tmp/exclude_files');
+    var expected = grunt.file.read('test/expected/exclude_files');
+    test.equal(actual, expected, 'some file-uris have been excluded from being converted to data-uris');
 
     test.done();
   },
