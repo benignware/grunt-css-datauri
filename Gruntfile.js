@@ -31,19 +31,17 @@ module.exports = function(grunt) {
     // Configuration to be run (and then tested).
     css_image_include: {
       default_options: {
-        options: {
-        },
+        options: {},
         files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
+          'tmp/default_options': ['test/fixtures/styles.css']
         }
-      },
-      custom_options: {
+      }, 
+      exclude_files: {
         options: {
-          separator: ': ',
-          punctuation: ' !!!'
+          exclude: ['*.gif']
         },
         files: {
-          'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123']
+          'tmp/exclude_files': ['test/fixtures/styles.css']
         }
       }
     },
