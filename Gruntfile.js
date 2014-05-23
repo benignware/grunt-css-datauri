@@ -1,6 +1,6 @@
 /*
- * grunt-css-image-include
- * https://github.com/benignware/grunt-css-image-include
+ * grunt-css-datauri
+ * https://github.com/benignware/grunt-css-datauri
  *
  * Copyright (c) 2014 Rafael Nowrotek
  * Licensed under the MIT license.
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
     },
 
     // Configuration to be run (and then tested).
-    css_image_include: {
+    css_datauri: {
       default_options: {
         options: {},
         files: {
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean', 'css_image_include', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'css_datauri', 'nodeunit']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test']);

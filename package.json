@@ -1,8 +1,8 @@
 {
-  "name": "grunt-css-image-include",
-  "description": "include images in css-files as data-uri",
+  "name": "grunt-css-datauri",
+  "description": "convert file-uris to datauris in css-files",
   "version": "0.1.0",
-  "homepage": "https://github.com/benignware/grunt-css-image-include",
+  "homepage": "https://github.com/benignware/grunt-css-datauri",
   "author": {
     "name": "Rafael Nowrotek",
     "email": "mail@benignware.com",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/benignware/grunt-css-image-include.git"
+    "url": "https://github.com/benignware/grunt-css-datauri.git"
   },
   "bugs": {
-    "url": "https://github.com/benignware/grunt-css-image-include/issues"
+    "url": "https://github.com/benignware/grunt-css-datauri/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/benignware/grunt-css-image-include/blob/master/LICENSE-MIT"
+      "url": "https://github.com/benignware/grunt-css-datauri/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {

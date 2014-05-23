@@ -22,7 +22,7 @@ var grunt = require('grunt');
     test.ifError(value)
 */
 
-exports.css_image_include = {
+exports.css_datauri = {
   setUp: function(done) {
     // setup here if necessary
     done();

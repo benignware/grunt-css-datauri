@@ -1,6 +1,6 @@
 /*
- * grunt-css-image-include
- * https://github.com/benignware/grunt-image-include
+ * grunt-css-datauri
+ * https://github.com/benignware/grunt-css-datauri
  *
  * Copyright (c) 2014 Rafael Nowrotek
  * Licensed under the MIT license.
@@ -15,7 +15,7 @@ var minimatch = require("minimatch");
 
 module.exports = function(grunt) {
     
-  grunt.registerMultiTask('css_image_include', 'include images in css-files as inline data', function() {
+  grunt.registerMultiTask('css_datauri', 'convert file-uris to data-uris', function() {
      
     var options = this.options({
       // defaults
