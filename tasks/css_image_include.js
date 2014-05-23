@@ -19,7 +19,7 @@ module.exports = function(grunt) {
      
     var options = this.options({
       // defaults
-      name: ""
+      exclude: []
     });
     
     this.files.forEach(function(f) {
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
             
             var value = d.value;
             
-            var pattern = /url\s*\(([^\)]+)\)/;
+            var pattern = /url\s*\(['"]*([^\'")]+)['"]*\)/;
             
             var match = pattern.exec(value);
             if (match) {
