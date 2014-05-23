@@ -1,3 +1,13 @@
+/*
+ * grunt-css-image-include
+ * https://github.com/benignware/grunt-image-include
+ *
+ * Copyright (c) 2014 Rafael Nowrotek
+ * Licensed under the MIT license.
+ */
+
+'use strict';
+
 var parse = require('css-parse');
 var stringify = require('css-stringify');
 var datauri = require('datauri');
