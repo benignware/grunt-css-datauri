@@ -10,12 +10,14 @@
 
 var parse = require('css-parse');
 var stringify = require('css-stringify');
-var datauri = require('datauri');
+var datauri = require('datauri').sync;
 var minimatch = require("minimatch");
 
 module.exports = function(grunt) {
     
   grunt.registerMultiTask('css_datauri', 'convert file-uris to data-uris', function() {
+  	
+  	console.log("exec task");
      
     var options = this.options({
       // defaults
