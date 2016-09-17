@@ -37,7 +37,7 @@
     "grunt": "~0.4.5"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin", "css", "assets", "data-url", "base64"
   ],
   "dependencies": {
     "chalk": "~0.4.0",
