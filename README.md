@@ -1,6 +1,7 @@
-# grunt-css-datauri
+grunt-css-datauri
+=================
 
-> convert file-uris to data-uris in css-files
+> Embed assets in css files
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
@@ -37,43 +38,42 @@ grunt.initConfig({
 
 ### Options
 
-#### options.exclude
+#### options.filter
 Type: `Array`
-Default value: `[]`
+Default value: `[**/*]`
 
-Exclude files by providing an array of glob-patterns
+Filter assets by specifying an array containg glob patterns.
 
 ### Usage Examples
 
 #### Basic Example
-Convert file-uris to data-uris in css-files
+Convert assets to data-uris in css-files
 
 ```js
 grunt.initConfig({
   css_datauri: {
     build: {
       options: {},
-      src: 'src/styles.css',
-      dest: 'build/styles.css'
+      src: 'test/fixtures/test.css',
+      dest: 'tmp/default_options'
     }
   }
 });
 ```
 
-#### Exclude files
-You can exclude files by specifying a glob-pattern
+#### Custom Example
+Filter assets by specifying an array containg glob patterns.
 
 ```js
 grunt.initConfig({
   css_datauri: {
     build: {
       options: {
-        exclude: ['*.gif']
+        filter: ['**/*', '!**/*.png']
       },
-      src: 'src/styles.css',
-      dest: 'build/styles.css'
+      src: 'test/fixtures/test.css',
+      dest: 'tmp/custom_options'
     }
   }
 });
 ```
-
