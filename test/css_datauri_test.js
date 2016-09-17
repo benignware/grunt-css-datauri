@@ -37,13 +37,12 @@ exports.css_datauri = {
 
     test.done();
   },
-  exclude_files: function(test) {
+  custom_options: function(test) {
     test.expect(1);
 
-    var actual = grunt.file.read('tmp/exclude_files');
-    var expected = grunt.file.read('test/expected/exclude_files');
+    var actual = grunt.file.read('tmp/custom_options');
+    var expected = grunt.file.read('test/expected/custom_options');
     test.equal(actual, expected, 'some file-uris have been excluded from being converted to data-uris');
-
     test.done();
   },
 };

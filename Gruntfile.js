@@ -33,15 +33,15 @@ module.exports = function(grunt) {
       default_options: {
         options: {},
         files: {
-          'tmp/default_options': ['test/fixtures/styles.css']
+          'tmp/default_options': ['test/fixtures/test.css']
         }
       }, 
-      exclude_files: {
+      custom_options: {
         options: {
-          exclude: ['*.gif']
+          filter: ['**/*', '!**/*.png']
         },
         files: {
-          'tmp/exclude_files': ['test/fixtures/styles.css']
+          'tmp/custom_options': ['test/fixtures/test.css']
         }
       }
     },
