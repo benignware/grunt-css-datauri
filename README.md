@@ -42,12 +42,12 @@ grunt.initConfig({
 Type: `Array`
 Default value: `[**/*]`
 
-Filter assets by specifying an array containg glob patterns.
+Filter assets by glob pattern relative to current working dir
 
 ### Usage Examples
 
 #### Basic Example
-Convert assets to data-uris in css-files
+Convert assets to data-urls in css-files
 
 ```js
 grunt.initConfig({
@@ -62,14 +62,14 @@ grunt.initConfig({
 ```
 
 #### Custom Example
-Filter assets by specifying an array containg glob patterns.
+Filter assets by glob pattern relative to current working dir
 
 ```js
 grunt.initConfig({
   css_datauri: {
     build: {
       options: {
-        filter: ['**/*', '!**/*.png']
+        filter: ['test/fixtures/fonts/**/*']
       },
       src: 'test/fixtures/test.css',
       dest: 'tmp/custom_options'

@@ -38,7 +38,7 @@ module.exports = function(grunt) {
       }, 
       custom_options: {
         options: {
-          filter: ['**/*', '!**/*.png']
+          filter: ['test/fixtures/fonts/**/*']
         },
         files: {
           'tmp/custom_options': ['test/fixtures/test.css']
